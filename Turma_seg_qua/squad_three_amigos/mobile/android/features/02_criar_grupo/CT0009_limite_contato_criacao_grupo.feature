@@ -10,21 +10,28 @@ Funcionalidade: Criar grupo no Whatsapp
         quero criar um grupo
         para que eu possa me comunicar em comunidade
 
-    CT_0009
+    CT_0004
 
-    Esquema de Cenario: Validar criar grupo com 
+    Contexto:
 
         Dado que tenho o whatsApp instalado no aparelho mobile
         E sou cadastrado no "whatsApp"
-        E estou na "tela inical"
-        E tenho pelo menos "1 contato salvo" 
+        E tenho pelo menos "257 contatos salvos" 
+        E estou na "tela inicial"
+
+    Esquema do Cenario: Validar criar grupo 
 
         Quando clico no "menu superir"
         E clico em "novo grupo"
-        E seleciono "1 contato"
+        E seleciono <quantidade contato>
         E clico na "seta de prosseguir" 
         E "nomeio o grupo" 
         E clico em "prosseguir"
 
-        Então é exibido o "novo grupo"
+        Então é exibido o <resultado>
+
+            Exemplos:
+                |     quantidade contato    |               resultato              |
+                |           "256"           |          "criado com sucesso"        |
+                |           "257"           |      "limite de contato excedido"    |
         
