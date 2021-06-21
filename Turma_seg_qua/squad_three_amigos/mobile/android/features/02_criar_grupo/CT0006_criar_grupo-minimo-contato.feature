@@ -10,11 +10,11 @@ Funcionalidade: Criar grupo no Whatsapp
         quero criar um grupo
         para que eu possa me comunicar em comunidade
 
-    CT_0009
+    CT_0006
 
-    Esquema de Cenario: Validar criar grupo com 
+    Cenário: Validar criar grupo com "quantidade mínima" de contato
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
         E estou na "tela inical"
         E tenho pelo menos "1 contato salvo" 

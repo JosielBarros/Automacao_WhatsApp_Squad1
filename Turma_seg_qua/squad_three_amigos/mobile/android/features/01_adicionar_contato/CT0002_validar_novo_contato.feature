@@ -10,11 +10,11 @@ Funcionalidade: Adicionar contato no Whatsapp
         quero salvar um novo contato
         para que eu posso te-lo na minha agenda
 
-    CT_0003
+    CT_0002
 
     Cenário: Validar adição de "novo contato"
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
         E estou com uma "conversa aberta"
         E recebo um "novo contato"
