@@ -6,11 +6,11 @@
 
 Funcionalidade: Adicionar contato no Whatsapp
 
-    Como um usuário do whatsApp 
-    quero preencher o campo número do contato
-    para que eu possa salva-lo
+        Como um usuário do whatsApp 
+        quero preencher o campo número do contato
+        para que eu possa salva-lo
 
-CT_0005
+    CT_0005
 
     Cenário: Verificar preenchimento de número de contato com "caracteres especiais"
 
