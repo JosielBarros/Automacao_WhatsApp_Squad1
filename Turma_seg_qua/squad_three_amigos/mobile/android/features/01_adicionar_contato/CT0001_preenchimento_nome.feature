@@ -14,7 +14,7 @@ Funcionalidade: Adicionar contato no Whatsapp
 
     Cenário: Verificar preenchimento do "nome do contato"
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
         E estou com uma "conversa aberta"
         E recebo um "novo contato"

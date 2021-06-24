@@ -10,11 +10,11 @@ Funcionalidade: Adicionar contato no Whatsapp
         quero preencher o campo número do contato
         para que eu possa salva-lo
 
-    CT_0005
+    CT_0003
 
-    Cenário: Verificar preenchimento de número de contato com "caracteres especiais"
+    Cenário: Verificar preenchimento de número de contato com "caracteres"
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
         E estou com uma "conversa aberta"
         E recebo um "novo contato"

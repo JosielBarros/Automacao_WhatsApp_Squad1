@@ -10,21 +10,17 @@ Funcionalidade: Criar grupo no Whatsapp
         quero criar um grupo
         para que eu possa me comunicar em comunidade
 
-    CT_0011
+    CT_0005
 
-    Cenário: Validar criar grupo com "quantidade mínima" de contato
+    Cenário: Validar criar grupo "sem contato"
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
         E estou na "tela inical"
-        E tenho pelo menos "1 contato salvo" 
 
-        Quando clico no "menu superir"
+        Quando clico no "menu superior"
         E clico em "novo grupo"
-        E seleciono "1 contato"
         E clico na "seta de prosseguir" 
-        E "nomeio o grupo" 
-        E clico em "prosseguir"
-
-        Então é exibido o "novo grupo"
+        
+        Então é exibido a mensagem "Pelo menos 1 contato deve ser selecionado"
         

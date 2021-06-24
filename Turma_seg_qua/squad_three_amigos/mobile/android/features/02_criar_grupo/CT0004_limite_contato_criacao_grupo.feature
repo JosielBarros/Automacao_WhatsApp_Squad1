@@ -12,12 +12,12 @@ Funcionalidade: Criar grupo no Whatsapp
 
     CT_0004
 
-    Contexto:
+    Contexto:     
 
-        Dado que tenho o whatsApp instalado no aparelho mobile
+        Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
+        E estou na "tela inical"
         E tenho pelo menos "257 contatos salvos" 
-        E estou na "tela inicial"
 
     Esquema do Cenario: Validar criar grupo 
 
@@ -33,5 +33,7 @@ Funcionalidade: Criar grupo no Whatsapp
             Exemplos:
                 |     quantidade contato    |               resultato              |
                 |           "256"           |          "criado com sucesso"        |
-                |           "257"           |      "limite de contato excedido"    |
+                |           "257"           |      "limite de contatos excedido"   |
+
+
         
