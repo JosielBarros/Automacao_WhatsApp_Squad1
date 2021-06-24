@@ -24,4 +24,4 @@ Funcionalidade: Adicionar contato no Whatsapp
         E insiro o número telefonico "11 9 00000000"
         E clico em "salvar"
 
-        Então é exibido a mensagem "Contato salvo: Josiel Teste"
+        Então é exibido o "novo contato salvo"

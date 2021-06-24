@@ -37,6 +37,9 @@ public class Class {
         el4.sendKeys("Se você recebeu essa mensagem é porque a automação está funcionando!!!! SUCESSOOOOOOOOO");
         MobileElement el5 = (MobileElement) driver.findElementByAccessibilityId("Enviar");
         el5.click();
+
+        SalvarContato ct = new SalvarContato();
+        ct.salvarContatoTest();
     }
 
     @After
