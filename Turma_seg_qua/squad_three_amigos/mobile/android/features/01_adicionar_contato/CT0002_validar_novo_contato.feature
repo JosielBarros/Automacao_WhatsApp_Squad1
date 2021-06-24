@@ -16,12 +16,12 @@ Funcionalidade: Adicionar contato no Whatsapp
 
         Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
-        E estou com uma "conversa aberta"
-        E recebo um "novo contato"
+        E clico para entrar no "aplicativo"
 
-        Quando clico em "adiconar contato"
-        E insiro a informação nome "Yonara"
-        E valido o número "+55 11 9999999"
+        Quando clico no "icone de nova conversa"
+        E clico em "novo contato"
+        E insiro a informação nome "Josiel Teste"
+        E insiro o número telefonico "11 9 00000000"
         E clico em "salvar"
 
-        Então é exibido a mensagem "contato salvo!"
+        Então é exibido a mensagem "Contato salvo: Josiel Teste"
