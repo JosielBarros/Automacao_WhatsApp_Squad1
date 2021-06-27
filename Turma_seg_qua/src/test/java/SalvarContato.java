@@ -26,7 +26,7 @@ public class SalvarContato {
         desiredCapabilities.setCapability("udid", "emulator-5554");
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
-
+        
         driver = new AndroidDriver<>(remoteUrl, desiredCapabilities);
     }
 
