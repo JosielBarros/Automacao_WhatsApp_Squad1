@@ -18,9 +18,10 @@ Funcionalidade: Criar grupo no Whatsapp
         E sou cadastrado no "whatsApp"
         E estou na "tela inical"
 
-        Quando clico no "menu superior"
+        Quando clico no "ícone de nova conversa"
         E clico em "novo grupo"
         E clico na "seta de prosseguir" 
         
         Então é exibido a mensagem "Pelo menos 1 contato deve ser selecionado"
+        E continua "exibindo a mesma tela" 
         

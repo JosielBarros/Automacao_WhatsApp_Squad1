@@ -32,7 +32,7 @@ public class SalvarContato {
 
     @Test
     public void salvarContatoTest() {
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         SalvarContatoPage c = new SalvarContatoPage(driver);
         c.paginaSalvarContato();
