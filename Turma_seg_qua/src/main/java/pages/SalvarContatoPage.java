@@ -10,9 +10,6 @@ public class SalvarContatoPage {
     }
 
     public void paginaSalvarContato(){
-        MobileElement whatsApp = (MobileElement) driver.findElementByAccessibilityId("WhatsApp");
-        whatsApp.click();
-
         MobileElement btnNovaConversa = (MobileElement) driver.findElementByAccessibilityId("Nova conversa");
         btnNovaConversa.click();
 

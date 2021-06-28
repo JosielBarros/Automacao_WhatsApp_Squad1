@@ -10,10 +10,7 @@ public class GrupoSemContatoPage {
         this.driver = driver;
     }
 
-    public void paginaGpSemContato(){
-        MobileElement whatsApp = driver.findElementByAccessibilityId("WhatsApp");
-        whatsApp.click();
-        
+    public void paginaGpSemContato(){ 
         MobileElement btnNovaConversa = driver.findElementByAccessibilityId("Nova conversa");
         btnNovaConversa.click();
 

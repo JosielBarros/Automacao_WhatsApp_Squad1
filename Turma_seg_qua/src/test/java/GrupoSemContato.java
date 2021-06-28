@@ -16,7 +16,6 @@ public class GrupoSemContato {
     @Before 
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("WhatsApp", "C:\\Users\\ybrito\\Downloads\\WhatsApp.apk");
         desiredCapabilities.setCapability("deviceName", "device");
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("platformVersion", "10.0");
