@@ -2,6 +2,8 @@
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +37,13 @@ public class GrupoSemContato {
 
         String textAdicionarParticipante = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[2]").getText();
         Assert.assertEquals("Adicionar participantes", textAdicionarParticipante);
-    } 
+    }
+
+    @After
+    public void tearDown() {
+        driver.navigate().back();
+        driver.quit();
+    }
 }
 
 

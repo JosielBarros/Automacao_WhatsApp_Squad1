@@ -17,21 +17,19 @@ public class GrupoContatoLimitePage {
         MobileElement btnNovoGrupo = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.ListView/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.TextView");
         btnNovoGrupo.click();
 
-
-
         for (int i = 1; i <=3; i++) {
-            MobileElement selecionarContato = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout["+i+"]/android.widget.LinearLayout");
+            MobileElement selecionarContato = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout["+i+"]/android.widget.LinearLayout");
             selecionarContato.click();
-
         }
 
-        MobileElement btnAvancar = (MobileElement) driver.findElementByAccessibilityId("Avançar");
+        MobileElement btnAvancar = driver.findElementByAccessibilityId("Avançar");
         btnAvancar.click();
 
-        MobileElement nomeGrupo = (MobileElement) driver.findElementById("com.whatsapp:id/group_name");
+        MobileElement nomeGrupo =  driver.findElementById("com.whatsapp:id/group_name");
         nomeGrupo.sendKeys("Squad1_Teste");
 
-        MobileElement btnCriarGrupo = (MobileElement) driver.findElementByAccessibilityId("Criar");
+        MobileElement btnCriarGrupo =  driver.findElementByAccessibilityId("Criar");
         btnCriarGrupo.click();
+
     }
 }

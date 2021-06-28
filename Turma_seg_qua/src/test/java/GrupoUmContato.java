@@ -1,14 +1,16 @@
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import pages.GrupoUmContatoPage;
-
-import org.junit.Assert;
 
 public class GrupoUmContato {
    private AndroidDriver <MobileElement>driver; 
@@ -37,7 +39,11 @@ public class GrupoUmContato {
 
        String nomeGrupo = driver.findElementById("com.whatsapp:id/conversation_contact_name").getText();
        Assert.assertEquals("Squad three amigos" , nomeGrupo);
-
    }
 
+   @After
+   public void tearDown() {
+       driver.navigate().back();
+       driver.quit();
+   }
 }

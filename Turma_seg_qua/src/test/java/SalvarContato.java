@@ -44,6 +44,8 @@ public class SalvarContato {
 
     @After
     public void tearDown() {
+        driver.navigate().back();
+        driver.navigate().back();
         driver.quit();
     }
 }

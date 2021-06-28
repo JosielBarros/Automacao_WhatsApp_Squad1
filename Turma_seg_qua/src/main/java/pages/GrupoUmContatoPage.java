@@ -12,9 +12,6 @@ public class GrupoUmContatoPage {
     }
 
     public void paginaGpUmContato(){
-        MobileElement whatsApp = driver.findElementByAccessibilityId("WhatsApp");
-        whatsApp.click();
-
         MobileElement btnNovaConversa = driver.findElementByAccessibilityId("Nova conversa");
         btnNovaConversa.click();
  

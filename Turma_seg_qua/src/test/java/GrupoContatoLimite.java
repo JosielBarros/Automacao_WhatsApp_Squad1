@@ -2,6 +2,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,6 +37,12 @@ public class GrupoContatoLimite {
 
         String nomeGrupo =  driver.findElementById("com.whatsapp:id/conversation_contact_name").getText();
         Assert.assertEquals("Squad1_Teste", nomeGrupo);
+    }
+
+    @After
+    public void tearDown() {
+        driver.navigate().back();
+        driver.quit();
     }
     
 }
