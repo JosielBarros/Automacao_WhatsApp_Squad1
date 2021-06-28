@@ -19,12 +19,12 @@ Funcionalidade: Criar grupo no Whatsapp
         E estou na "tela inical"
         E tenho pelo menos "1 contato salvo" 
 
-        Quando clico no "menu superir"
+        Quando clico no "ícone de nova conversa"
         E clico em "novo grupo"
         E seleciono "1 contato"
-        E clico na "seta de prosseguir" 
-        E "nomeio o grupo" 
-        E clico em "prosseguir"
-
-        Então é exibido o "novo grupo"
+        E clico para "avançar"
+        E adiciono nome para o grupo "Squad three amigos"
+        E clico para "criar grupo"
+        
+        Então é exibido a tela com o novo grupo "Squad three amigos"
         
