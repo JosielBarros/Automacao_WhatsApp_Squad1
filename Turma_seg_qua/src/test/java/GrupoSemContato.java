@@ -35,7 +35,7 @@ public class GrupoSemContato {
 
         String textAdicionarParticipante = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[2]").getText();
         Assert.assertEquals("Adicionar participantes", textAdicionarParticipante);
-    }
+    } 
 }
 
 
