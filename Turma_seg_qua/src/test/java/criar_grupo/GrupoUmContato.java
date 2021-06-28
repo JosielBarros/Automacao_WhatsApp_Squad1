@@ -1,3 +1,4 @@
+package criar_grupo;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -8,9 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import criar_grupo_pages.GrupoUmContatoPage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import pages.GrupoUmContatoPage;
 
 public class GrupoUmContato {
    private AndroidDriver <MobileElement>driver; 

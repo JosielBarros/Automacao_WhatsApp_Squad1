@@ -1,4 +1,4 @@
-
+package criar_grupo;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -8,15 +8,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import criar_grupo_pages.GrupoContatoLimitePage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import pages.GrupoSemContatoPage;
 
-public class GrupoSemContato {
-    private AndroidDriver<MobileElement>driver;
+public class GrupoContatoLimite {
+    private AndroidDriver<MobileElement> driver;
 
-    @Before 
-    public void setUp() throws MalformedURLException {
+    @Before
+    public void setUp() throws MalformedURLException{
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("deviceName", "device");
         desiredCapabilities.setCapability("platformName", "Android");
@@ -25,18 +26,18 @@ public class GrupoSemContato {
 
         URL url = new URL("http://localhost:4723/wd/hub");
 
-        driver = new AndroidDriver<MobileElement>(url, desiredCapabilities);
-    }     
+        driver = new AndroidDriver<>(url, desiredCapabilities);
+    }
 
     @Test
-    public void gpSemContatoTest(){
+    public void GpLimiteContato(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        GrupoSemContatoPage mapPage = new GrupoSemContatoPage(driver);
-        mapPage.paginaGpSemContato();
+        GrupoContatoLimitePage mapPage = new GrupoContatoLimitePage(driver);
+        mapPage.paginaGpLimiteContato();
 
-        String textAdicionarParticipante = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[2]").getText();
-        Assert.assertEquals("Adicionar participantes", textAdicionarParticipante);
+        String nomeGrupo =  driver.findElementById("com.whatsapp:id/conversation_contact_name").getText();
+        Assert.assertEquals("Squad1_Teste", nomeGrupo);
     }
 
     @After
@@ -44,9 +45,5 @@ public class GrupoSemContato {
         driver.navigate().back();
         driver.quit();
     }
+    
 }
-
-
-
-
-

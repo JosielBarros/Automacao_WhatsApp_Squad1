@@ -1,3 +1,4 @@
+package adicionar_contato;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,9 +10,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import adicionar_contato_pages.SalvarContatoPage;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import pages.SalvarContatoPage;
 
 public class SalvarContato {
 
