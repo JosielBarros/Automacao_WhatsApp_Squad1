@@ -16,7 +16,7 @@ Funcionalidade: Adicionar contato no Whatsapp
 
         Dado que tenho o "whatsApp instalado" no aparelho mobile
         E sou cadastrado no "whatsApp"
-        E clico para entrar no "aplicativo"
+        E estou na "tela inicial"
 
         Quando clico no "icone de nova conversa"
         E clico em "novo contato"
