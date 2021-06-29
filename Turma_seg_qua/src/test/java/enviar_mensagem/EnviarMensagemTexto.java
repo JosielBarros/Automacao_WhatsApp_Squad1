@@ -38,7 +38,10 @@ public class EnviarMensagemTexto {
         enviarMsg.paginaMsgText();
         
         String msgEnviada =  driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.ListView/android.view.ViewGroup[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.TextView").getText();
-        Assert.assertEquals("Olá, tudo bem?", msgEnviada);        
+        Assert.assertEquals("Olá, tudo bem?", msgEnviada);
+        
+        String msgCampoVazio= driver.findElementById("com.whatsapp:id/entry").getText();
+        Assert.assertEquals("Digite uma mensagem", msgCampoVazio);
     }
 
     @After

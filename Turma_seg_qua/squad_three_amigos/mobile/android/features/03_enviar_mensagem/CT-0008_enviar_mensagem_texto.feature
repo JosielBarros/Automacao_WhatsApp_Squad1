@@ -25,3 +25,4 @@ Funcionalidade: Enviar mensagem
         E clico para "enviar"
 
         Então a "Olá, tudo bem?" é exibido no chat de conversa
+        E o campo fica com a mensagem de texto padrão "Digite uma mensagem"
